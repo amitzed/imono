@@ -220,3 +220,10 @@ h3:hover {
     transition: ease all .5s;
   }
 }
+
+/* For iPhoneX */
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
+  .main-title h1 {
+    padding-top: 75%;
+  }
+}
