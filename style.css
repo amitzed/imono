@@ -1,5 +1,8 @@
 html {
+  background-image: url("images/butterfly-bg.gif");
   background-color: #30313B;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-sizing: border-box;
   line-height: 25px;
   overflow-x: hidden;
@@ -22,7 +25,11 @@ body {
 }
 
 .header {
-
+  position: fixed;
+  width: 100%;
+  top: 40px;
+  z-index: 10;
+  display: block;
 }
 .header .container {
   position: relative;
@@ -50,8 +57,14 @@ body {
   position: absolute;
 }
 
+img {
+  border-style: none;
+  vertical-align: middle;
+}
+
 .header-nav a {
   color: #ffffff;
+  opacity: .8;
   vertical-align: top;
   margin-right: 20px;
   display: inline-block;
