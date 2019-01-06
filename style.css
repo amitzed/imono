@@ -111,40 +111,36 @@ h3 {
 }
 
 .gallery-parent {
-  /* height: 100vh; */
-  /* width: 100%; */
-  /* display: inline-table; */
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
   position: fixed;
-  /* width: 100%; */
+  width: 100%;
   bottom: 40px;
   z-index: 10;
-
   margin: 10px;
-  padding: 30px;
-  /* height: 500px; */
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
   align-content: center;
 }
 
-.gallery-pics {
-  /* font-family: 'Hind Siliguri', sans-serif; */
-  /* margin: 0; */
-  /* text-align: center; */
-  /* vertical-align: middle; */
-  /* text-shadow: 5px 2px 40px #6E3632, -5px -2px 40px #30313B; */
-  /* height: 50px; */
-  /* width: 50px; */
-}
-
-
 .gallery-pics .images {
-  margin: 1px;
-  height: 50px;
-  width: 50px;
+  margin: 10px;
+  height: 150px;
+  width: 200px;
+}
+@media (max-width: 1000px) {
+  .gallery-pics .images  {
+    margin: 8px;
+    height: 125px;
+    width: 125px;
+    transition: ease all .5s;
+  }
+}
+@media (max-width: 600px) {
+  .gallery-pics .images  {
+    margin: 5px;
+    height: 65px;
+    width: 65px;
+    transition: ease all .5s;
+  }
 }
