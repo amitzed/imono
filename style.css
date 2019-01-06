@@ -1,6 +1,8 @@
 html {
-  background-image: url("images/butterfly-bg.gif");
+  background-image: url("images/running-water.jpg");
   background-color: #30313B;
+  height: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
@@ -52,7 +54,7 @@ body {
 
 .header-logo img {
   height: 100%;
-  margin: 0 0 0 0;
+  margin: 0 0 0 50px;
   top: 5px;
   position: absolute;
 }
@@ -71,6 +73,7 @@ img {
   letter-spacing: .05rem;
   font-size: 1.1em;
   text-decoration: none;
+  margin-right: 50px;
 }
 .header-nav a:hover {
   color: #989BBA;
