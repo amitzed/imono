@@ -67,7 +67,7 @@ body {
 }
 .header-logo img:hover {
     transform: scale(1.5);
-    box-shadow: 5px 2px 40px #6E3632, -5px -2px 40px #30313B;
+    box-shadow: 5px 2px 40px #989BBA, -5px -2px 40px #30313B;
     opacity: 1;
     transition: ease all 1s;
 }
@@ -83,11 +83,27 @@ body {
   text-decoration: none;
   margin-right: 50px;
 }
+@media (max-width: 750px) {
+  .header-nav a {
+    font-size: 1rem;
+    margin: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    transition: ease all .5s;
+  }
+}
 .header-nav a:hover {
   color: #989BBA;
-  letter-spacing: 1rem;
+  letter-spacing: .6rem;
   font-size: 1.3em;
   transition: ease all .5s;
+}
+#social:hover {
+  color: #C9463D;
+  transform: scale(1.5);
 }
 
 .main-title {
@@ -129,6 +145,11 @@ h3 {
   font-size: 20px;
   font-weight: lighter;
   margin-top: 30px;
+}
+h3:hover {
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 @media (max-width: 800px) {
   h3 {
@@ -173,10 +194,6 @@ h3 {
   transform: translateY(-50%);
   box-shadow: 5px 2px 40px #6E3632, -5px -2px 40px #30313B;
   opacity: 1;
-  transition: ease all 1s;
-}
-.gallery-pics .images:hover {
-  background: blue;
   transition: ease all 1s;
 }
 @media (max-width: 1215px) {
