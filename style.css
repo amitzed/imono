@@ -1,0 +1,11 @@
+html {
+  background-color: #30313B;
+}
+
+.header {
+
+}
+.header .container {
+  position: relative;
+  z-index: 1;
+}
